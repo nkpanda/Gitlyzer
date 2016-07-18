@@ -52,8 +52,8 @@ for path,name,fname in os.walk(rootpath):
  for fn in fname:
      q=path+"/"+fn
      flist.append(q)
-# Add the file extentions expected in your files below
-extrm=['.sh','.plist','.rb','.py','.h','.m']
+# Add the file extentions you want to skip
+extrm=['.sh','.txt']
 for sl in simlist:
  relist.extend([re.compile(sl)])
 
